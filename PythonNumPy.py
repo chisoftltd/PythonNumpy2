@@ -366,3 +366,65 @@ print()
 arr = np.array([[13, 2, 6], [9, 7, 10]])
 print(np.sort(arr))
 print()
+
+# NumPy Filter Array
+# Filtering Arrays
+arr = np.array([41, 42, 43, 44, 41, 42, 43, 44])
+x = [True, False, True, False, True, False, False, True]
+newarr = arr[x]
+print(newarr)
+print()
+
+# Creating the Filter Array
+arr0 = np.array([6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 4, 4, 16, 17, 18])
+# Create an empty list
+filter_arr = []
+
+# go through each element in arr
+for element in arr0:
+  # if the element is higher than 42, set the value to True, otherwise False:
+  if element > 5:
+    filter_arr.append(True)
+  else:
+    filter_arr.append(False)
+
+newarr = arr0[filter_arr]
+
+print(filter_arr)
+print(newarr)
+print()
+
+# Create a filter array that will return only even elements from the original array
+# Create an empty list
+filter_arr = []
+
+# go through each element in arr
+for element in arr0:
+  # if the element is completely divisble by 2, set the value to True, otherwise False
+  if element % 2 == 0:
+    filter_arr.append(True)
+  else:
+    filter_arr.append(False)
+
+newarr = arr0[filter_arr]
+
+print(filter_arr)
+print(newarr)
+print()
+
+# Creating Filter Directly From Array
+filter_arr = arr0 > 4
+
+newarr = arr0[filter_arr]
+
+print(filter_arr)
+print(newarr)
+print()
+
+# Create a filter array that will return only even elements from the original array
+filter_arr = arr0 % 2 == 0
+newarr = arr0[filter_arr]
+print(filter_arr)
+print(newarr)
+
+#
