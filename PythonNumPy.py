@@ -313,7 +313,39 @@ print()
 
 # Use the hsplit() method to split the 2-D array into three 2-D arrays along rows
 arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
-
 newarr = np.hsplit(arr, 3)
-
 print(newarr)
+print()
+
+# NumPy Searching Arrays
+arr = np.array([1, 2, 3, 4, 5, 4, 4])
+x = np.where(arr == 4)
+print(x)
+print()
+
+# Find the indexes where the values are even
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 4, 4, 16, 17, 18])
+x = np.where(arr%2 == 0)
+print(x)
+print()
+
+# Find the indexes where the values are odd
+x = np.where(arr%2 == 1)
+print(x)
+print()
+
+# Search Sorted
+arr = np.array([6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 4, 4, 16, 17, 18])
+x = np.searchsorted(arr, 7)
+print(x)
+print()
+
+# Search From the Right Side
+x = np.searchsorted(arr, 17, side='right')
+print(x)
+print()
+
+# Multiple Values
+x = np.searchsorted(arr, [2, 4, 6, 17])
+print(x)
+print()
