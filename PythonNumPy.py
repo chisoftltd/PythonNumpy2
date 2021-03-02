@@ -42,3 +42,8 @@ print()
 arr = np.array([[11, 12, 13, 14, 15], [16, 17, 18, 19, 110]])
 print(arr[0:2, 1:4])
 print()
+
+# NumPy Data Types
+arr = np.array([12, 23, 34, 45, 56])
+print(arr.dtype)
+print()
