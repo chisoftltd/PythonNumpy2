@@ -47,3 +47,47 @@ print()
 arr = np.array([12, 23, 34, 45, 56])
 print(arr.dtype)
 print()
+
+arr = np.array(['apple', 'banana', 'cherry'])
+print(arr.dtype)
+print()
+
+# Creating Arrays With a Defined Data Type
+arr = np.array([1, 2, 3, 4], dtype='S')
+print(arr)
+print(arr.dtype)
+print()
+
+# Create an array with data type 4 bytes integer
+arr = np.array([1, 2, 3, 4], dtype='i4')
+print(arr)
+print(arr.dtype)
+print()
+
+# Converting Data Type on Existing Arrays
+arr = np.array([1.2, 2.3, 3.4, 4.5, 5.6])
+print(arr.dtype)
+print()
+
+newarr = arr.astype('i')
+print(newarr)
+print(newarr.dtype)
+print()
+
+# Change data type from float to integer by using int as parameter value
+arr = np.array([1.21, 2.21, 3.21, 4.21])
+print(arr.dtype)
+print()
+
+newarr = arr.astype(int)
+print(newarr)
+print(newarr.dtype)
+print()
+
+# Change data type from integer to boolean
+arr = np.array([1, 0, 3, 4, 0, 2])
+print(arr.dtype)
+print()
+newarr = arr.astype(bool)
+print(newarr)
+print(newarr.dtype)
