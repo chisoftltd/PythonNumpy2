@@ -500,3 +500,16 @@ plt.show()
 
 sns.distplot(arr0, hist=False)
 plt.show()
+
+# Normal (Gaussian) Distribution
+x = np.random.normal(size=(2, 3))
+print(x)
+print()
+
+x = np.random.normal(loc=1, scale=2, size=(2, 3))
+print(x)
+print()
+
+# Visualization of Normal Distribution
+sns.distplot(np.random.normal(size=1000), hist=False)
+plt.show()
