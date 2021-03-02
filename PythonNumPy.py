@@ -91,3 +91,42 @@ print()
 newarr = arr.astype(bool)
 print(newarr)
 print(newarr.dtype)
+print()
+
+# NumPy Array Copy vs View
+# COPY:
+arr = np.array([11, 21, 31, 41, 51])
+x = arr.copy()
+arr[0] = 421
+
+print(arr)
+print()
+print(x)
+print()
+
+# VIEW:
+arr = np.array([10, 20, 30, 40, 50, 60, 70])
+x = arr.view()
+arr[0] = 402
+print(arr)
+print()
+print(x)
+print()
+
+# Make Changes in the VIEW:
+arr = np.array([11, 22, 32, 42, 52])
+x = arr.view()
+x[0] = 321
+print(arr)
+print()
+print(x)
+print()
+
+# Check if Array Owns it's Data
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.copy()
+y = arr.view()
+print(x.base)
+print()
+print(y.base)
+print()
