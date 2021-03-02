@@ -473,3 +473,13 @@ print()
 
 x = np.random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
 print(x)
+print()
+
+# Random Permutations
+# Shuffling Arrays
+np.random.shuffle(arr0)
+print(arr0)
+print()
+
+# Generating Permutation of Arrays
+print(np.random.permutation(arr0))
