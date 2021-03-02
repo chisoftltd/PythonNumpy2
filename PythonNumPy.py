@@ -166,3 +166,75 @@ arr = np.array([[1, 2, 3], [4, 5, 6]])
 newarr = arr.reshape(-1)
 print(newarr)
 print()
+
+# NumPy Array Iterating
+# Iterating Arrays
+arr = np.array([1, 2, 3])
+
+for x in arr:
+  print(x)
+print()
+
+# Iterating 2-D Arrays
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+for x in arr:
+  print(x)
+print()
+
+# Iterate on each scalar element of the 2-D array
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+for x in arr:
+  for y in x:
+    print(y)
+print()
+
+# Iterating 3-D Arrays
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+for x in arr:
+  print(x)
+print()
+
+# To return the actual values, the scalars, we have to iterate the arrays in each dimension
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+for x in arr:
+  for y in x:
+    for z in y:
+      print(z)
+print()
+
+# Iterating Arrays Using nditer()
+arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+for x in np.nditer(arr):
+  print(x)
+print()
+
+# Iterating Array With Different Data Types
+arr = np.array([1, 2, 3])
+for x in np.nditer(arr, flags=['buffered'], op_dtypes=['S']):
+  print(x)
+print()
+
+# Iterating With Different Step Size
+# Iterate through every scalar element of the 2D array skipping 1 element
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+for x in np.nditer(arr[:, ::2]):
+  print(x)
+print()
+
+# Enumerated Iteration Using ndenumerate()
+arr = np.array([1, 2, 3])
+for idx, x in np.ndenumerate(arr):
+  print(idx, x)
+print()
+
+# Enumerate on following 2D array's elements
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+for idx, x in np.ndenumerate(arr):
+  print(idx, x)
+print()
+
+# Enumerate on following 3D array's elements
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+for idx, x in np.ndenumerate(arr):
+  print(idx, x)
+print()
