@@ -349,3 +349,20 @@ print()
 x = np.searchsorted(arr, [2, 4, 6, 17])
 print(x)
 print()
+
+# NumPy Sorting Arrays
+# Sorting Arrays
+print(np.sort(arr))
+print()
+print(np.sort_complex(arr))
+print()
+
+# Sort a boolean array
+arr1 = np.array([True, False, True])
+print(np.sort(arr1))
+print()
+
+# Sorting a 2-D Array
+arr = np.array([[13, 2, 6], [9, 7, 10]])
+print(np.sort(arr))
+print()
