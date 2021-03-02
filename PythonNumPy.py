@@ -483,3 +483,20 @@ print()
 
 # Generating Permutation of Arrays
 print(np.random.permutation(arr0))
+
+# Seaborn
+# Plotting a Displot
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.distplot([0, 1, 2, 3, 4, 5])
+plt.show()
+
+sns.distplot(arr0)
+plt.show()
+
+# Plotting a Distplot Without the Histogram
+sns.distplot([0, 1, 2, 3, 4, 5], hist=False)
+plt.show()
+
+sns.distplot(arr0, hist=False)
+plt.show()
