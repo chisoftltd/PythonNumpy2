@@ -141,3 +141,28 @@ print()
 arr = np.array([21, 23, 34, 45, 4], ndmin = 5)
 print(arr)
 print('shape of array :', arr.shape)
+print()
+
+# NumPy Array Reshaping
+# Reshape From 1-D to 2-D
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+newarr = arr.reshape(4, 3)
+print(newarr)
+print()
+
+# Returns Copy or View?
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+print(arr.reshape(2, 4).base)
+print()
+
+# Unknown Dimension
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+newarr = arr.reshape(2, 2, -1)
+print(newarr)
+print()
+
+# Flattening the arrays
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+newarr = arr.reshape(-1)
+print(newarr)
+print()
