@@ -426,5 +426,41 @@ filter_arr = arr0 % 2 == 0
 newarr = arr0[filter_arr]
 print(filter_arr)
 print(newarr)
+print()
 
-#
+# Random Numbers in NumPy
+x = np.random.randint(100)
+print(x)
+print()
+
+# Generate Random Float
+x = np.random.rand()
+print(x)
+print()
+
+# Generate Random Array
+x=np.random.randint(100, size=(15))
+print(x)
+print()
+
+x = np.random.randint(100, size=(3, 5))
+print(x)
+print()
+
+# Floats
+x = np.random.rand(15)
+print(x)
+print()
+
+x = np.random.rand(3, 5)
+print(x)
+print()
+
+# Generate Random Number From Array
+x = np.random.choice([3, 5, 7, 9])
+print(x)
+print()
+
+x = np.random.choice([3, 5, 7, 9], size=(3, 5))
+print(x)
+print()
