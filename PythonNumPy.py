@@ -517,14 +517,40 @@ sns.distplot(np.random.normal(size=1000), hist=False)
 # Binomial Distribution
 x = np.random.binomial(n=10, p=0.5, size=10)
 print(x)
+print()
 
 # Visualization of Binomial Distribution
 sns.distplot(np.random.binomial(n=10, p=0.5, size=1000), hist=True, kde=False)
 
-plt.show()
+#plt.show()
 
 # Difference Between Normal and Binomial Distribution
 sns.distplot(np.random.normal(loc=50, scale=5, size=1000), hist=False, label='normal')
 sns.distplot(np.random.binomial(n=100, p=0.5, size=1000), hist=False, label='binomial')
+
+#plt.show()
+
+# Poisson Distribution
+x = np.random.poisson(lam=2, size=10)
+
+print(x)
+print()
+
+# Visualization of Poisson Distribution
+sns.distplot(np.random.poisson(lam=10, size=1000), kde=False)
+
+#plt.show()
+print()
+
+# Difference Between Normal and Poisson Distribution
+sns.distplot(np.random.normal(loc=50, scale=7, size=1000), hist=False, label='normal')
+sns.distplot(np.random.poisson(lam=50, size=1000), hist=False, label='poisson')
+
+plt.show()
+print()
+
+# Difference Between Poisson and Binomial Distribution
+sns.distplot(np.random.binomial(n=1000, p=0.01, size=1000), hist=False, label='binomial')
+sns.distplot(np.random.poisson(lam=10, size=1000), hist=False, label='poisson')
 
 plt.show()
