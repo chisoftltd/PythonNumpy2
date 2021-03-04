@@ -554,3 +554,14 @@ sns.distplot(np.random.binomial(n=1000, p=0.01, size=1000), hist=False, label='b
 sns.distplot(np.random.poisson(lam=10, size=1000), hist=False, label='poisson')
 
 plt.show()
+
+# Uniform Distribution
+x = np.random.uniform(size=(2, 4))
+print(x)
+print()
+
+# Visualization of Uniform Distribution
+import matplotlib.pyplot as plt1
+import seaborn as sns1
+sns1.distplot(np.random.uniform(size=1000), hist=False)
+plt1.show()
