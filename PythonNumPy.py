@@ -565,3 +565,18 @@ import matplotlib.pyplot as plt1
 import seaborn as sns1
 sns1.distplot(np.random.uniform(size=1000), hist=False)
 plt1.show()
+
+# Logistic Distribution
+x = np.random.logistic(loc=1, scale=2, size=(2,15))
+print(x)
+print()
+
+# Visualization of Logistic Distribution
+sns.distplot(np.random.logistic(size=1000), hist=False)
+plt.show()
+
+# Difference Between Logistic and Normal Distribution
+sns.distplot(np.random.normal(scale=2, size=1000), hist=False, label='normal')
+sns.distplot(np.random.logistic(size=1000), hist=False, label='logistic')
+
+plt.show()
