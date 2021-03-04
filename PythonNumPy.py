@@ -489,17 +489,17 @@ print(np.random.permutation(arr0))
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.distplot([0, 1, 2, 3, 4, 5])
-plt.show()
+#plt.show()
 
 sns.distplot(arr0)
-plt.show()
+#plt.show()
 
 # Plotting a Distplot Without the Histogram
 sns.distplot([0, 1, 2, 3, 4, 5], hist=False)
-plt.show()
+#plt.show()
 
 sns.distplot(arr0, hist=False)
-plt.show()
+#plt.show()
 
 # Normal (Gaussian) Distribution
 x = np.random.normal(size=(2, 3))
@@ -512,8 +512,19 @@ print()
 
 # Visualization of Normal Distribution
 sns.distplot(np.random.normal(size=1000), hist=False)
-plt.show()
+#plt.show()
 
 # Binomial Distribution
-x = random.Binomial(n=10, p=0.5, sizwe=10)
+x = np.random.binomial(n=10, p=0.5, size=10)
 print(x)
+
+# Visualization of Binomial Distribution
+sns.distplot(np.random.binomial(n=10, p=0.5, size=1000), hist=True, kde=False)
+
+plt.show()
+
+# Difference Between Normal and Binomial Distribution
+sns.distplot(np.random.normal(loc=50, scale=5, size=1000), hist=False, label='normal')
+sns.distplot(np.random.binomial(n=100, p=0.5, size=1000), hist=False, label='binomial')
+
+plt.show()
