@@ -614,3 +614,13 @@ plt.show()
 
 sns.distplot(np.random.chisquare(df=1, size=1000))
 plt.show()
+print()
+
+# Rayleigh Distribution
+x = np.random.rayleigh(scale=2, size=(2,3))
+print(x)
+print()
+
+# Visualization of Rayleigh Distribution
+sns.distplot(np.random.rayleigh(size=1000), hist=False)
+plt.show()
