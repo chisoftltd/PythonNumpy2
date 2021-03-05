@@ -522,7 +522,7 @@ print()
 # Visualization of Binomial Distribution
 sns.distplot(np.random.binomial(n=10, p=0.5, size=1000), hist=True, kde=False)
 
-plt.show()
+# plt.show()
 
 # Difference Between Normal and Binomial Distribution
 sns.distplot(np.random.normal(loc=50, scale=5, size=1000), hist=False, label='normal')
@@ -579,7 +579,7 @@ sns.distplot(np.random.logistic(size=1000), hist=False)
 sns.distplot(np.random.normal(scale=2, size=1000), hist=False, label='normal')
 sns.distplot(np.random.logistic(size=1000), hist=False, label='logistic')
 
-plt.show()
+# plt.show()
 
 # Multinomial Distribution
 x = np.random.multinomial(n=6, pvals=[1/6, 1/6, 1/6, 1/6, 1/6, 1/6])
@@ -596,7 +596,7 @@ sns.distplot(np.random.exponential(size=1000), hist=False)
 #plt.show()
 
 sns.distplot(np.random.exponential(size=1000), hist=True)
-plt.show()
+# plt.show()
 
 # Chi Square Distribution
 x = np.random.chisquare(df=2, size=(2, 3))
@@ -633,7 +633,7 @@ print()
 
 # Visualization of Pareto Distribution
 sns.distplot(np.random.pareto(a=2, size=1000), kde=False)
-plt.show()
+# plt.show()
 print()
 
 # Zipf Distribution
@@ -644,7 +644,7 @@ print()
 # Visualization of Zipf Distribution
 x = np.random.zipf(a=2, size=1000)
 sns.distplot(x[x<10], kde=False)
-plt.show()
+#plt.show()
 print()
 
 # NumPy ufuncs
@@ -667,3 +667,46 @@ if type(np.add) == np.ufunc:
   print('add is ufunc')
 else:
   print('add is not ufunc')
+
+# Simple Arithmetic
+# add
+arr1 = np.array([10,20,30,45,50,60])
+arr2 = np.array([8,22,33,44,55,66])
+
+newarr = np.subtract(arr1, arr2)
+print(newarr)
+print()
+
+# Multiplication
+arr1 = np.array([10,20,30,40,50,60])
+arr2 = np.array([8,22,33,44,55,66])
+newarr = np.multiply(arr1, arr2)
+print(newarr)
+print()
+
+# Power
+arr1 = np.array([-10,20,-30,40,-50,60])
+arr2 = np.array([8,22,33,44,55,66])
+newarr = np.power(arr1, arr2)
+print(newarr)
+print()
+
+
+# Remainder
+newarr = np.mod(arr1, arr2)
+print(newarr)
+print()
+newarr = np.remainder(arr1, arr2)
+print(newarr)
+print()
+
+
+# Quotient and Mod
+newarr = np.divmod(arr1, arr2)
+print(newarr)
+print()
+
+
+# Absolute Values
+newarr = np.absolute(arr)
+print(newarr)
