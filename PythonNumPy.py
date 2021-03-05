@@ -513,3 +513,7 @@ print()
 # Visualization of Normal Distribution
 sns.distplot(np.random.normal(size=1000), hist=False)
 plt.show()
+
+# Binomial Distribution
+x = random.Binomial(n=10, p=0.5, sizwe=10)
+print(x)
