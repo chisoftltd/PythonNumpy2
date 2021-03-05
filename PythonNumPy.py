@@ -624,3 +624,14 @@ print()
 # Visualization of Rayleigh Distribution
 sns.distplot(np.random.rayleigh(size=1000), hist=False)
 plt.show()
+print()
+
+# Pareto Distribution
+x = np.random.pareto(a=2, size=(2, 3))
+print(x)
+print()
+
+# Visualization of Pareto Distribution
+sns.distplot(np.random.pareto(a=2, size=1000), kde=False)
+plt.show()
+print()
