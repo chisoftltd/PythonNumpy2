@@ -594,3 +594,23 @@ print()
 # Visualization of Exponential Distribution
 sns.distplot(np.random.exponential(size=1000), hist=False)
 plt.show()
+
+sns.distplot(np.random.exponential(size=1000), hist=True)
+plt.show()
+
+# Chi Square Distribution
+x = np.random.chisquare(df=2, size=(2, 3))
+print(x)
+
+x = np.random.chisquare(df=3, size=(3, 4))
+print(x)
+
+# Visualization of Chi Square Distribution
+sns.distplot(np.random.chisquare(df=1, size=1000), hist=False)
+plt.show()
+
+sns.distplot(np.random.chisquare(df=1, size=1000), hist=True)
+plt.show()
+
+sns.distplot(np.random.chisquare(df=1, size=1000))
+plt.show()
