@@ -489,17 +489,17 @@ print(np.random.permutation(arr0))
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.distplot([0, 1, 2, 3, 4, 5])
-plt.show()
+#plt.show()
 
 sns.distplot(arr0)
-plt.show()
+#plt.show()
 
 # Plotting a Distplot Without the Histogram
 sns.distplot([0, 1, 2, 3, 4, 5], hist=False)
-plt.show()
+#plt.show()
 
 sns.distplot(arr0, hist=False)
-plt.show()
+#plt.show()
 
 # Normal (Gaussian) Distribution
 x = np.random.normal(size=(2, 3))
@@ -512,8 +512,79 @@ print()
 
 # Visualization of Normal Distribution
 sns.distplot(np.random.normal(size=1000), hist=False)
+<<<<<<< HEAD
 plt.show()
 
 # Binomial Distribution
-x = random.Binomial(n=10, p=0.5, sizwe=10)
+x = random.Binomial(n=10, p=0.5, size=10)
 print(x)
+=======
+#plt.show()
+
+# Binomial Distribution
+x = np.random.binomial(n=10, p=0.5, size=10)
+print(x)
+print()
+
+# Visualization of Binomial Distribution
+sns.distplot(np.random.binomial(n=10, p=0.5, size=1000), hist=True, kde=False)
+
+#plt.show()
+
+# Difference Between Normal and Binomial Distribution
+sns.distplot(np.random.normal(loc=50, scale=5, size=1000), hist=False, label='normal')
+sns.distplot(np.random.binomial(n=100, p=0.5, size=1000), hist=False, label='binomial')
+
+#plt.show()
+
+# Poisson Distribution
+x = np.random.poisson(lam=2, size=10)
+
+print(x)
+print()
+
+# Visualization of Poisson Distribution
+sns.distplot(np.random.poisson(lam=10, size=1000), kde=False)
+
+#plt.show()
+print()
+
+# Difference Between Normal and Poisson Distribution
+sns.distplot(np.random.normal(loc=50, scale=7, size=1000), hist=False, label='normal')
+sns.distplot(np.random.poisson(lam=50, size=1000), hist=False, label='poisson')
+
+plt.show()
+print()
+
+# Difference Between Poisson and Binomial Distribution
+sns.distplot(np.random.binomial(n=1000, p=0.01, size=1000), hist=False, label='binomial')
+sns.distplot(np.random.poisson(lam=10, size=1000), hist=False, label='poisson')
+
+plt.show()
+
+# Uniform Distribution
+x = np.random.uniform(size=(2, 4))
+print(x)
+print()
+
+# Visualization of Uniform Distribution
+import matplotlib.pyplot as plt1
+import seaborn as sns1
+sns1.distplot(np.random.uniform(size=1000), hist=False)
+plt1.show()
+
+# Logistic Distribution
+x = np.random.logistic(loc=1, scale=2, size=(2,15))
+print(x)
+print()
+
+# Visualization of Logistic Distribution
+sns.distplot(np.random.logistic(size=1000), hist=False)
+plt.show()
+
+# Difference Between Logistic and Normal Distribution
+sns.distplot(np.random.normal(scale=2, size=1000), hist=False, label='normal')
+sns.distplot(np.random.logistic(size=1000), hist=False, label='logistic')
+
+plt.show()
+>>>>>>> 645aca79a1dcc0eda125481e0f6ba98100f593fd
