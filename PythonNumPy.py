@@ -593,7 +593,7 @@ print()
 
 # Visualization of Exponential Distribution
 sns.distplot(np.random.exponential(size=1000), hist=False)
-plt.show()
+#plt.show()
 
 sns.distplot(np.random.exponential(size=1000), hist=True)
 plt.show()
@@ -607,13 +607,13 @@ print(x)
 
 # Visualization of Chi Square Distribution
 sns.distplot(np.random.chisquare(df=1, size=1000), hist=False)
-plt.show()
+#plt.show()
 
 sns.distplot(np.random.chisquare(df=1, size=1000), hist=True)
-plt.show()
+#plt.show()
 
 sns.distplot(np.random.chisquare(df=1, size=1000))
-plt.show()
+#plt.show()
 print()
 
 # Rayleigh Distribution
@@ -623,7 +623,7 @@ print()
 
 # Visualization of Rayleigh Distribution
 sns.distplot(np.random.rayleigh(size=1000), hist=False)
-plt.show()
+#plt.show()
 print()
 
 # Pareto Distribution
@@ -633,5 +633,16 @@ print()
 
 # Visualization of Pareto Distribution
 sns.distplot(np.random.pareto(a=2, size=1000), kde=False)
+plt.show()
+print()
+
+# Zipf Distribution
+x = np.random.zipf(a=2, size=(2, 3))
+print(x)
+print()
+
+# Visualization of Zipf Distribution
+x = np.random.zipf(a=2, size=1000)
+sns.distplot(x[x<10], kde=False)
 plt.show()
 print()
