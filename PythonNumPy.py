@@ -512,13 +512,6 @@ print()
 
 # Visualization of Normal Distribution
 sns.distplot(np.random.normal(size=1000), hist=False)
-<<<<<<< HEAD
-plt.show()
-
-# Binomial Distribution
-x = random.Binomial(n=10, p=0.5, size=10)
-print(x)
-=======
 #plt.show()
 
 # Binomial Distribution
@@ -529,7 +522,7 @@ print()
 # Visualization of Binomial Distribution
 sns.distplot(np.random.binomial(n=10, p=0.5, size=1000), hist=True, kde=False)
 
-#plt.show()
+plt.show()
 
 # Difference Between Normal and Binomial Distribution
 sns.distplot(np.random.normal(loc=50, scale=5, size=1000), hist=False, label='normal')
@@ -553,14 +546,14 @@ print()
 sns.distplot(np.random.normal(loc=50, scale=7, size=1000), hist=False, label='normal')
 sns.distplot(np.random.poisson(lam=50, size=1000), hist=False, label='poisson')
 
-plt.show()
+#plt.show()
 print()
 
 # Difference Between Poisson and Binomial Distribution
 sns.distplot(np.random.binomial(n=1000, p=0.01, size=1000), hist=False, label='binomial')
 sns.distplot(np.random.poisson(lam=10, size=1000), hist=False, label='poisson')
 
-plt.show()
+#plt.show()
 
 # Uniform Distribution
 x = np.random.uniform(size=(2, 4))
@@ -571,7 +564,7 @@ print()
 import matplotlib.pyplot as plt1
 import seaborn as sns1
 sns1.distplot(np.random.uniform(size=1000), hist=False)
-plt1.show()
+#plt1.show()
 
 # Logistic Distribution
 x = np.random.logistic(loc=1, scale=2, size=(2,15))
@@ -580,11 +573,24 @@ print()
 
 # Visualization of Logistic Distribution
 sns.distplot(np.random.logistic(size=1000), hist=False)
-plt.show()
+#plt.show()
 
 # Difference Between Logistic and Normal Distribution
 sns.distplot(np.random.normal(scale=2, size=1000), hist=False, label='normal')
 sns.distplot(np.random.logistic(size=1000), hist=False, label='logistic')
 
 plt.show()
->>>>>>> 645aca79a1dcc0eda125481e0f6ba98100f593fd
+
+# Multinomial Distribution
+x = np.random.multinomial(n=6, pvals=[1/6, 1/6, 1/6, 1/6, 1/6, 1/6])
+print(x)
+print()
+
+# Exponential Distribution
+x = np.random.exponential(scale=2, size=(2, 3))
+print(x)
+print()
+
+# Visualization of Exponential Distribution
+sns.distplot(np.random.exponential(size=1000), hist=False)
+plt.show()
