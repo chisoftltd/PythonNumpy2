@@ -11,7 +11,7 @@ print()
 arr = np.array([12, 22, 32, 42, 52, 62, 72])
 print(arr[:4])
 print()
-
+ 
 # Negative Slicing
 arr = np.array([31, 32, 33, 34, 35, 36, 37])
 print(arr[-3:-1])
@@ -710,3 +710,29 @@ print()
 # Absolute Values
 newarr = np.absolute(arr)
 print(newarr)
+print()
+
+# Rounding Decimals
+# Truncation
+arr = np.trunc([-3.1666, 3.6667])
+print(arr)
+print()
+
+arr = np.fix([-3.1666, 3.6667])
+print(arr)
+print()
+
+# Rounding
+arr = np.around(3.1666, 2)
+print(arr)
+print()
+
+# Floor
+arr = np.floor([-8.1666, 1.6667])
+print(arr)
+print()
+
+# Ceil
+arr = np.ceil([-4.14567, 2.9876])
+print(arr)
+print()
