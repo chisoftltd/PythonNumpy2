@@ -785,3 +785,29 @@ print()
 newarr = np.cumsum(arr2)
 print(newarr)
 print()
+
+# NumPy Products
+# Products
+arr = np.array([9,8,7,6])
+x = np.prod(arr)
+print(x)
+print()
+
+arr1 = np.array([1, 2, 3, 4])
+arr2 = np.array([5, 6, 7, 8])
+x = np.prod([arr1, arr2])
+print(x)
+print()
+
+# Product Over an Axis
+arr1 = np.array([10, 21, 32, 43])
+arr2 = np.array([54, 65, 76, 87])
+newarr = np.prod([arr1, arr2], axis=1)
+print(newarr)
+print()
+
+# Cummulative Product
+arr = np.array([5, 6, 7, 8])
+newarr = np.cumprod(arr)
+print(newarr)
+print()
