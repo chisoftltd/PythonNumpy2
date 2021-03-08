@@ -811,3 +811,15 @@ arr = np.array([5, 6, 7, 8])
 newarr = np.cumprod(arr)
 print(newarr)
 print()
+
+# NumPy Differences
+# Differences
+arr = np.array([10,20,25,5])
+newarr = np.diff(arr)
+print(newarr)
+print()
+
+arr = np.array([11,13,15,17])
+newarr = np.diff(arr, n=2)
+print(newarr)
+print()
