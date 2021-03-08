@@ -759,3 +759,29 @@ from math import log
 nplog = np.frompyfunc(log, 2, 1)
 print(nplog(100, 15))
 print()
+
+# NumPy Summations
+# Summations
+arr1 = np.array([1,2,3])
+arr2 = np.array([4,5,6])
+newarr = np.add(arr1, arr2)
+print(newarr)
+print()
+
+arr1 = np.array([7,8,9])
+arr2 = np.array([10,11,12])
+newarr = np.sum([arr1, arr2])
+print(newarr)
+print()
+
+# Summation Over an Axis
+arr1 = np.array([7,8,9])
+arr2 = np.array([10,11,12])
+newarr = np.sum([arr1, arr2], axis=1)
+print(newarr)
+print()
+
+# Cummulative Sum
+newarr = np.cumsum(arr2)
+print(newarr)
+print()
