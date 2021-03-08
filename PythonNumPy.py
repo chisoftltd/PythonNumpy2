@@ -823,3 +823,37 @@ arr = np.array([11,13,15,17])
 newarr = np.diff(arr, n=2)
 print(newarr)
 print()
+
+# NumPy LCM Lowest Common Multiple
+# Finding LCM (Lowest Common Multiple)
+num1 = 4
+num2 = 6
+x = np.lcm(num1,num2)
+print(x)
+print()
+
+# Finding LCM in Arrays
+arr = np.array([3,5,7])
+x = np.lcm.reduce(arr)
+print(x)
+print()
+
+
+arr = np.arange(2, 22)
+x = np.lcm.reduce(arr)
+print(x)
+print()
+
+# NumPy GCD Greatest Common Denominator
+# Finding GCD (Greatest Common Denominator)
+num1 = 6
+num2 = 9
+x = np.gcd(num1, num2)
+print(x)
+print()
+
+# Finding GCD in Arrays
+arr = np.array([22,21,5,94,71])
+x = np.gcd.reduce(arr)
+print(x)
+print()
