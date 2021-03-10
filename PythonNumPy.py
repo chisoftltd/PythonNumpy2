@@ -857,3 +857,47 @@ arr = np.array([22,21,5,94,71])
 x = np.gcd.reduce(arr)
 print(x)
 print()
+
+# NumPy Trigonometric Functions
+# Trigonometric Functions
+x = np.sin(np.pi/2)
+print(x)
+print()
+
+
+arr = np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
+x = np.sin(arr)
+print(x)
+print()
+
+
+# Convert Degrees Into Radians
+arr = np.array([90, 180, 270, 360])
+x = np.deg2rad(arr)
+print(x)  
+print()
+
+
+# Radians to Degrees
+arr = np.array([np.pi/2, np.pi, 1.5*np.pi, 2*np.pi])
+x = np.rad2deg(arr)
+print(x)
+print()
+
+# Finding Angles
+x = np.arcsin(1.0)
+print(x)
+print()
+
+# Angles of Each Value in Arrays
+arr = np.array([1, -1, 0.1])
+x = np.arcsin(arr)
+print(x)
+print()
+
+# Hypotenues
+base = 5
+prep = 6
+x1 = np.hypot(base, prep)
+print(x1)
+print()
