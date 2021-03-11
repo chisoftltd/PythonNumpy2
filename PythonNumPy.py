@@ -918,3 +918,27 @@ arr = np.array([1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1])
 x = np.unique(arr)
 print(x)
 print()
+
+# Finding Union
+arr1 = np.array([9,8,7,6,5,4,3,2,1,0])
+arr2 = np.array([9,18,7,16,5,14,3,12,1,10])
+newarr = np.union1d(arr1, arr2)
+print(newarr)
+print()
+
+# Finding Intersection
+arr1 = np.array([4,3,2,1])
+arr2 = np.array([1,3,5,7])
+newarr = np.intersect1d(arr1, arr2, assume_unique=True)
+print(newarr)
+print()
+
+# Finding Difference
+newarr = np.setdiff1d(arr1, arr2)
+print(newarr)
+print()
+
+# Finding Symmetric Difference
+newarr = np.setxor1d(arr1, arr2)
+print(newarr)
+print()
