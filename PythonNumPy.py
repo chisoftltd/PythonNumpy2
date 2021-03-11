@@ -901,3 +901,20 @@ prep = 6
 x1 = np.hypot(base, prep)
 print(x1)
 print()
+
+# NumPy Hyperbolic Functions
+x = np.sin(np.pi/2)
+print(x)
+print()
+
+arr = np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
+x = np.cosh(arr)
+print(x)
+print()
+
+# NumPy Set Operations
+# Create Sets in NumPy
+arr = np.array([1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1])
+x = np.unique(arr)
+print(x)
+print()
